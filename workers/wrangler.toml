@@ -1,0 +1,29 @@
+name = "azahel-nemotrin"
+main = "src/azahel-worker.ts"
+compatibility_date = "2024-01-01"
+
+account_id = ""
+workers_dev = true
+
+# KV Namespace binding
+[[kv_namespaces]]
+binding = "AZAHEL_KV"
+id = ""
+preview_id = ""
+
+# Analytics Engine binding
+[[analytics_engine_datasets]]
+binding = "AZAHEL_ANALYTICS"
+
+# Routes (actualizar con tu dominio)
+route = "https://azahel.your-domain.com/api/v1/*"
+zone_id = ""
+
+# Development
+[env.development]
+route = "http://localhost:8787/api/v1/*"
+workers_dev = true
+
+# Triggers (cron jobs opcionales)
+[[triggers.crons]]
+cron = "0 */6 * * *" # Cada 6 horas

@@ -91,7 +91,7 @@ Tu Edge Function en Cloudflare que recibe datos del teléfono.
 
 ---
 
-## ��� Métricas Esperadas
+## 📊 Métricas Esperadas
 
 | Métrica | Valor |
 |---------|-------|
